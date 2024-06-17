@@ -25,7 +25,7 @@ def buscarUsuario(nombre, rutaArchivo):                                      #Fu
     except Exception as e:
         print(f"\nError en el programa, solicite ayuda al operador\n{e}")
 
-def borrarUsuario(nombre, rutaArchivo):
+def borrarUsuario(nombre, rutaArchivo):                                     #Función para borrar un usuario del contenido.txt
     try:
         with open(rutaArchivo, 'r+', encoding='utf-8') as txt:
             lineas = txt.readlines()
@@ -57,7 +57,7 @@ def contadorUsuarios(nombre, rutaArchivo):
                     contador += 1
             return contador
     except Exception as e:
-        print(f"\nError en el programa, solicite ayuda al operador\n{e}")
+        print(f"\nError en el programa, solicite ayuda al operador\n{e}")  #Cierre de función
 
 
 
